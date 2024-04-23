@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tarun's Garage - Rent or Buy Your Dream Car</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+    <h1>Tarun's Garage</h1>
+    <h2>Rent or Buy Your Dream Car</h2>
+  </header>
+
+  <nav>
+    <ul>
+      <li><a href="#cars">Featured Cars</a></li>
+      <li><a href="#contact">Contact Us</a></li>
+    </ul>
+  </nav>
+
+  <main>
+    <section id="cars">
+      <h2>Featured 2024 Models</h2>
+      <div class="car-container">
+        <div class="car">
+          <img src="images/car1.jpg" alt="2024 Ford Mustang">
+          <h3>2024 Ford Mustang</h3>
+          <p>Rent: Starting at $85/day | Sale: Contact for details</p>
+          <label for="rentOrSale">Rent or Buy:</label>
+          <select name="rentOrSale" id="rentOrSale">
+            <option value="rent">Rent</option>
+            <option value="sale">Sale</option>
+          </select>
+          <button>Learn More</button>
+        </div>
+        <div class="car">
+          <img src="images/car2.jpg" alt="2024 Tesla Model S">
+          <h3>2024 Tesla Model S</h3>
+          <p>Rent: Starting at $250/day | Sale: Contact for details</p>
+          <label for="rentOrSale">Rent or Buy:</label>
+          <select name="rentOrSale" id="rentOrSale">
+            <option value="rent">Rent</option>
+            <option value="sale">Sale</option>
+          </select>
+          <button>Learn More</button>
+        </div>
+        <div class="car">
+          <img src="images/car3.jpg" alt="2024 Toyota Supra">
+          <h3>2024 Toyota Supra</h3>
+          <p>Rent: Starting at $120/day | Sale: Contact for details</p>
+          <label for="rentOrSale">Rent or Buy:</label>
+          <select name="rentOrSale" id="rentOrSale">
+            <option value="rent">Rent</option>
+            <option value="sale">Sale</option>
+          </select>
+          <button>Learn More</button>
+        </div>
+      </div>
+    </section>
+
+    <section id="request">
+      <h2>Can't Find Your Dream Car?</h2>
+      <p>Let us know what you're looking for!</p>
+      <form action="submit.php" method="post">
+        <label for="carModel">Desired Car Model:</label>
+        <input type="text" name="carModel" id="carModel" required>
+        <label for="inquiry">Inquiry:</label>
+        <textarea name="inquiry" id="inquiry"></textarea>
+        <button type="submit">Submit Request</button>
+      </form>
+    </section>
+  </main>
+
+  <footer>
+    <p>Contact Us:</p>
+    <ul>
+      <li><a href="tel:+1234567890">+1 (234) 567-890</a></li>
+      <li><a href="mailto:tarunsgarage@mail.com">tarunsgarage@mail.com</a></li>
+    </ul>
+    <p>Address: 123 Main Street, Anytown, CA 12345</p>
+    <p>&copy; 2024 Tarun's Garage. All Rights Reserved.</p>
+  </footer>
+
+  <script>
+    // Add functionality to buttons (replace with actual functionality)
+    const learnMoreButtons = document.querySelectorAll('.car button');
+    learnMoreButtons.forEach(button => {
+      button.addEventListener('click', () => {
+        alert('This feature is coming soon!');
+      });
+    });
